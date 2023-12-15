@@ -1,0 +1,32 @@
+﻿<Application x:Class="Aborochka.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Aborochka"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="{x:Type Button}">
+            <!-- Цвет текста кнопки -->
+            <Setter Property="Background" Value="#FF4C4750" />
+            <Setter Property="Foreground" Value="#FFC55ADE" />
+            <!-- Новый шрифт -->
+            <Setter Property="FontFamily" Value="Comic Sans MS" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="30" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="Foreground" Value="#FFC55ADE" />
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="small">
+            <Setter Property="FontSize" Value="12"></Setter>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="large">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Foreground" Value="#FFC55ADE" />
+        </Style>
+    </Application.Resources>
+</Application>
